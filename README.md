@@ -20,7 +20,7 @@ Choose an option from the main menu:
 3: Exit
 Follow the prompts to perform the desired action.
 
-Screenshots
+Screenshots(The code worked for all three options, but too many screenshots to put in the readme)
 <img width="959" alt="NeighborhoodLibraryOutput1" src="https://github.com/Nyflyguyx200/neighborhood-library/assets/114933451/c2f5745c-f575-4471-9587-f906b96bf490">
 
 <img width="959" alt="NeighborhoodLibraryOutput2" src="https://github.com/Nyflyguyx200/neighborhood-library/assets/114933451/0204ec07-feb3-4176-85c7-a0909ecac79b">

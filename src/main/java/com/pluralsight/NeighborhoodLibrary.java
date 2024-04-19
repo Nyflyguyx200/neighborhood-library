@@ -61,14 +61,9 @@ public class NeighborhoodLibrary {
         int option = scanner.nextInt();
         scanner.nextLine();
 
-
-
-
-
-
         switch (option) {
             case 1:
-                checkedOutBook(inventory, scanner); //Show available books
+                checkedOutBook(inventory, scanner); //Check out a book
                 break;
             case 2:
                 break;
@@ -77,6 +72,7 @@ public class NeighborhoodLibrary {
         }
     }
 
+    //Method to display checked out books
     public static void showCheckedOutBooks(Book[] inventory, Scanner scanner) {
         System.out.println("\nChecked Out Books: ");
         boolean foundCheckedOutBooks = false;
@@ -97,11 +93,9 @@ public class NeighborhoodLibrary {
         System.out.print("Select an option: ");
         String option = scanner.nextLine().toUpperCase();
 
-
-
         switch (option) {
             case "C":
-                checkInBook(inventory, scanner);
+                checkInBook(inventory, scanner); //Check in a book
                 break;
             case "X":
                 break;
@@ -110,6 +104,7 @@ public class NeighborhoodLibrary {
         }
     }
 
+    //Method to check out a book
     public static void checkedOutBook(Book[] inventory, Scanner scanner) {
         System.out.print("Enter the ID of the book you want to check out: ");
         int bookId = scanner.nextInt();
@@ -119,7 +114,7 @@ public class NeighborhoodLibrary {
             if (book != null && book.getId() == bookId && !book.isCheckedOut()) {
                 System.out.print("Enter your name: ");
                 String name = scanner.nextLine();
-                book.checkOut(name);
+                book.checkOut(name); //Check out a book
                 System.out.println("Book checked out successfully!");
                 return;
             }
@@ -127,6 +122,7 @@ public class NeighborhoodLibrary {
         System.out.println("Book not found or already checked out");
     }
 
+    //Method to check in a book
     public static void checkInBook(Book[] inventory, Scanner scanner) {
         System.out.print("Enter the ID of the book you want to check in: ");
         int bookId = scanner.nextInt();
@@ -134,7 +130,7 @@ public class NeighborhoodLibrary {
 
         for (Book book : inventory) {
             if (book != null && book.getId() == bookId && book.isCheckedOut()) {
-                book.checkIn();
+                book.checkIn(); //Check in a book
                 System.out.println("Book checked in successfully!");
                 return;
             }
@@ -142,8 +138,10 @@ public class NeighborhoodLibrary {
         System.out.println("Book not found or already checked out");
     }
 
+    //Method to create the inventory of books
     public static Book[] createInventory() {
         Book[] inventory = new Book[20];
+        //Add books to the inventory
         inventory[0] = new Book(1, "9780547928210", "The Hobbit");
         inventory[1] = new Book(2, "9780439139601", "Harry Potter and the Prisoner of Azkaban");
         inventory[2] = new Book(3, "9780140283334", "To Kill a Mockingbird");

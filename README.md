@@ -20,6 +20,14 @@ Choose an option from the main menu:
 3: Exit
 Follow the prompts to perform the desired action.
 
+Screenshots
+<img width="959" alt="NeighborhoodLibraryOutput1" src="https://github.com/Nyflyguyx200/neighborhood-library/assets/114933451/c2f5745c-f575-4471-9587-f906b96bf490">
+
+<img width="959" alt="NeighborhoodLibraryOutput2" src="https://github.com/Nyflyguyx200/neighborhood-library/assets/114933451/0204ec07-feb3-4176-85c7-a0909ecac79b">
+
+<img width="957" alt="NeighborhoodLibraryOutput3" src="https://github.com/Nyflyguyx200/neighborhood-library/assets/114933451/9e3bae26-6bd9-4d36-b48f-82342a91bc04">
+
+
 Interesting Code
 for (Book book : inventory) {
 This line of code utilizes an enhanced for loop to iterate through the inventory array of Book objects.

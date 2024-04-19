@@ -7,14 +7,16 @@ public class Book {
     private boolean isCheckedOut;
     private String checkedOutTo;
 
+    //Constructor
     public Book(int id, String isbn, String title) {
         this.id = id;
         this.isbn = isbn;
         this.title = title;
-        this.isCheckedOut = false;
-        this.checkedOutTo = " ";
+        this.isCheckedOut = false; //Default is not checked out
+        this.checkedOutTo = " "; //Default checked out ti nobody
     }
 
+    //Getters and Setters
     public int getId() {
         return id;
     }
@@ -55,20 +57,24 @@ public class Book {
         this.checkedOutTo = checkedOutTo;
     }
 
+    //Method to check out a book
     public void checkOut(String name) {
         this.isCheckedOut = true;
         this.checkedOutTo = name;
     }
 
+    //Metrhod to check in a book
     public void checkIn() {
         this.isCheckedOut = false;
         this.checkedOutTo = " ";
     }
 
+    //toString method to provide a custom string representation of the book
     public String toString() {
         StringBuilder sb = new StringBuilder();
         sb.append("ID: ").append(id).append(", ISBN: ").append(isbn).append(". Title: ").append(title);
 
+        //If checked out, append the name it's checked out to
         if (isCheckedOut) {
             sb.append(", Checked out to: ").append(checkedOutTo);
         }

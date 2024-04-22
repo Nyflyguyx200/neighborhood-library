@@ -28,7 +28,9 @@ Screenshots(The code worked for all three options, but too many screenshots to p
 <img width="957" alt="NeighborhoodLibraryOutput3" src="https://github.com/Nyflyguyx200/neighborhood-library/assets/114933451/9e3bae26-6bd9-4d36-b48f-82342a91bc04">
 
 
-Interesting Code
+
+Interesting Code: 
+
 for (Book book : inventory) {
 This line of code utilizes an enhanced for loop to iterate through the inventory array of Book objects.
 It's interesting because it showcases a concise and readable way to iterate through arrays or collections in Java, enhancing code readability and maintainability.
